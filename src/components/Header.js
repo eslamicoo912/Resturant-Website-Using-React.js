@@ -10,7 +10,7 @@ const Header = () => {
     <div className="header" data-overlay-dark="8">
       <nav className="navbar navbar-expand-lg mt-5">
         <div className="container-fluid brand">
-          <a href="#" className="navbar-brand my-brand">
+          <a href="/" className="navbar-brand my-brand">
             pizzazilla
           </a>
           <button
