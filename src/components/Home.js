@@ -7,17 +7,22 @@ import Dishes from "./Dishes";
 import Footer from "./Footer";
 
 export const Home = () => {
+  // A state to manage the "previous" and "next" button
   const [count, setCount] = useState(0);
 
+  // The list that contains the data of the chefs
   const list = chefsData.map((item) => {
+    // Passing the chef data as props to the "Chef Card"
     return <ChefCard chef={item} />;
   });
 
+  // This function will be executed after clicking "Next" button
   function handleNext() {
     if (count === chefsData.length - 1) return;
     setCount(count + 1);
   }
 
+  // This function will be executed after clicking "Previous" button
   function handlePrev() {
     if (count === 0) return;
     setCount(count - 1);
